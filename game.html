@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Jogo Mata Mosquito</title>
+	<!--BOOTSTRAP-->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="comandos.js"></script>
+</head>
+<body onresize="ajusteTamanhoTela()">
+	
+	<div class="painel">
+		<div class='vidas'> 
+			<img id="vida1" src="imagens/coracao_cheio.png">
+			<img id="vida2" src="imagens/coracao_cheio.png">
+			<img id="vida3" src="imagens/coracao_cheio.png">
+		</div>
+		<div class='tempo'> TEMPO RESTANTE:<span id="temporizador"></span>
+		</div>
+	</div>
+	<script>
+		capturaNivel();
+		setInterval(function(){
+			moscaRandom();
+		},velocidade)
+		setInterval(function(){
+			temporizador()
+		},1000)
+	</script>
+	
+</body>
+</html>

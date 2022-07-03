@@ -1,0 +1,37 @@
+body{
+	background-image: url(imagens/bg.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+
+}
+
+.painel{
+	position: absolute;
+	width: 300px;
+	padding: 10px;
+	bottom: 0px;
+	background-color: #FFF;
+	opacity: 0.7;
+	font-family: verdana;
+	font-size: 20px;
+	font-weight: bold;
+	border-radius: 10px 10px 0px 0px;
+}
+
+.vidas{
+	float: left;
+}
+	
+.tempo{
+	float: left;
+
+}
+
+.moscaLado1{
+	position: absolute;
+	transform: scaleX(1);	
+}
+.moscaLado2{
+	position: absolute;
+	transform: scaleX(-1);		
+}
